@@ -41,14 +41,7 @@ var barColors = [
 		  label: 'TFKE',
 		  data: [2, 0,1,0,0,0,2,0,0,0,1,0,0],
 		  backgroundColor: '#66aa00'
-	   }, {
-		  label: 'AN',
-		  data: [2, 0,1,0,0,0,0,0,0,0,0,0,0],
-		  backgroundColor: '#dd4477'
-	   }, {
-		  label: 'WANITA',
-		  data: [0, 0,1,0,0,0,0,0,0,0,0,0,0],
-		  backgroundColor: '#0099c6'
+	   
 	   
 	   }]
 	},

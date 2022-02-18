@@ -842,6 +842,7 @@ ul > li {
 .banner {
 	position: relative;
 	margin-bottom: -8px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .banner img {
@@ -1229,8 +1230,9 @@ ul > li {
 /*======Why Us section==========*/
 
 .whyUs-section {
-	background: #c0991a;
-	/*color: #fff;*/
+	background: #348ee7;
+	
+	box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;	/*color: #fff;*/
 }
 
 .whyUs-section .container {
