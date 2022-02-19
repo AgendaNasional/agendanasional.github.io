@@ -377,7 +377,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: sans-serif;container
 	line-height: 1.5;
 }
 
@@ -393,6 +393,34 @@ main {
   }
   
   main-desc {
+	
+	color: #fff;
+	font-size: 50px;
+  }
+
+  main-video {
+	
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 32px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style: oblique;
+  }
+
+  main-sub {
+	font-weight: bold;
+	color: #fff;
+	font-size: 60px;
+  }
+  
+  main-desc-sub {
+	
+	color: #fff;
+	font-size: 30px;
+  }
+
+
+  main-desc-sub {
 	
 	color: #fff;
 	font-size: 50px;
@@ -845,8 +873,16 @@ ul > li {
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+.banner2 {
+	position: relative;
+	margin-bottom: -8px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+	height: 170px;
+}
+
 .banner img {
 	width: 100%;
+
 }
 
 .banner .container {
@@ -922,6 +958,16 @@ ul > li {
 	padding-bottom: 4.375em;
 	margin-top:20px;
 }
+
+.page-heading .container-video {
+	text-align: center;
+	/*padding-top: 6em;*/
+	/*padding-bottom: 4.687em;*/
+	padding-top:10px;
+	padding-bottom: 4.375em;
+	margin-top:8px;
+}
+
 
 .page-heading .container h2 {
 	/*font-size: 3rem;*/
