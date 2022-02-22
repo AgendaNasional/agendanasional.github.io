@@ -86,6 +86,11 @@ hr {
 	overflow: visible; /* 2 */
 }
 
+hr.solid {
+	border-top: 3px solid #bbb;
+  }
+  
+
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -957,6 +962,16 @@ ul > li {
 	padding-top: 6.25em;
 	padding-bottom: 4.375em;
 	margin-top:20px;
+}
+
+.page-heading .containersub {
+	text-align: center;
+	/*padding-top: 6em;*/
+	/*padding-bottom: 4.687em;*/
+	
+	padding-bottom: 2.375em;
+	margin-top:6px;
+	color: #000;
 }
 
 .page-heading .container-video {
