@@ -430,6 +430,18 @@ main {
 	color: #fff;
 	font-size: 50px;
   }
+
+
+  main-title {
+	
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 42px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-style: oblique;
+	text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
 p {
 	margin: 0;
 }
@@ -699,6 +711,13 @@ a:hover, a:active {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 150px;
+	margin-top: 50px;
+	height:max-content;
+	
+	
+	
+	
+	
 	
 }
 
@@ -961,7 +980,7 @@ ul > li {
 	/*padding-bottom: 4.687em;*/
 	padding-top: 6.25em;
 	padding-bottom: 4.375em;
-	margin-top:20px;
+	margin-top:250px;
 }
 
 .page-heading .containersub {
@@ -1088,11 +1107,13 @@ ul > li {
 
 .learn-courses .box-wrap {
 	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	margin-bottom: 10px;
 }
 
 .learn-courses .box-wrap, .recent-course-single .grid-item{
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 
 .learn-courses .box-wrap .img-wrap, 

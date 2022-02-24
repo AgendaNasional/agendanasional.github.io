@@ -16,39 +16,148 @@
 	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+
+
+	<style>
+
+.footer2 {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 330px;
+  background-color: rgb(55, 163, 206);
+  background-image: linear-gradient(to right, rgb(100, 201, 241) , rgb(0, 69, 126));
+  color: white;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  text-align: center;  
+
+	   }
+
+
+	   .vid-title {
+	
+	text-align: center;
+	margin-left:450px;
+	margin-right:450px;
+	
+  
+  }
+
+  .space
+{
+	height: 220px;
+}
+
+/*.big:hover { 
+	-ms-transform: scale(1.2); /* IE 9 */
+ /* -webkit-transform: scale(1.2); /* Safari 3-8 */
+ /* transform: scale(1.2); 
+} */
+     
+.check {
+  display: inline-block;
+  transform: rotate(45deg);
+  height: var(--height);
+  width: var(--width);
+  border-bottom: var(--borderWidth) solid var(--borderColor);
+  border-right: var(--borderWidth) solid var(--borderColor);
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  width: 200px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-align: center;
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #12b636;
+  color: #ffffff;
+}
+
+.status1{
+	
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	margin-top:0px;
+	margin-bottom: 820px;
+	margin-left: 240px;
+	width: 100%;
+	text-align: center;
+	
+	
+}
+
+
+    
+
+
+
+
+
+
+
+	</style>
 </head>
 <body>
-	<!-- <div id="page" class="site" itemscope itemtype="http://schema.org/LocalBusiness">
-		<header class="site-header">
-			<div class="top-header">
-				<div class="container">
-					<div class="top-header-left">
-						<div class="top-header-block">
-							<a href="mailto:info@educationpro.com" itemprop="email"><i class="fas fa-envelope"></i> info@educationpro.com</a>
-						</div>
-						<div class="top-header-block">
-							<a href="tel:+9779813639131" itemprop="telephone"><i class="fas fa-phone"></i> +977 9813639131</a>
-						</div>
-					</div>
-					<div class="top-header-right">
-						<div class="social-block">
-							<ul class="social-list">
-								<li><a href=""><i class="fab fa-viber"></i></a></li>
-								<li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-								<li><a href=""><i class="fab fa-facebook-messenger"></i></a></li>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-								<li><a href=""><i class="fab fa-skype"></i></a></li>
-							</ul>
-						</div>
-						<div class="login-block">
-							<a href="">Login /</a>
-							<a href="">Register</a>
-						</div>
-					</div>
-				</div>
-			</div>-->
-			<!-- Top header Close -->
+	
 			<div class="main-header">
 				<div class="containerhead">
 					<div class="logo-wrap" itemprop="logo">
@@ -103,30 +212,54 @@
 			</div>
 			 <div id="owl-four-nav" class="owl-nav"></div>
 		</div>
-		<!-- <div class="banner">
-			<div class="owl-five owl-carousel owl-theme">
-	            <div class="item-video">
-            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            		</iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-	            <div class="item-video">
-            		<iframe width="100%" height="450" src="https://www.youtube.com/embed/ENVW3uZ3a-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            		</iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/0bfk90rWV9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-	            <div class="item-video">
-	            	<iframe width="100%" height="450" src="https://www.youtube.com/embed/ktvTqknDobU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	            </div>
-          </div>
-		</div> -->
+		
+
+		
+		<div class="footer2">
+			<div class="vid-title">
+				<main-title></br></br></br>5 Agenda Nasional</main-title>
+			  </div>
+
+			  <div class="learn-courses">
+				<div class="container-number">
+					<div>
+						<div class="owl-one owl-carousel">
+							<div>
+								<img src="images/ag_1.png" alt="agenda no" width="100" height="100" class="big">
+							</div>
+	
+							<div>
+								<img src="images/ag_2.png" alt="agenda no" width="120" height="120">
+							</div>
+	
+							<div>
+								<img src="images/ag_3.png" alt="agenda no" width="120" height="120">
+							</div>
+							<div>
+								<img src="images/ag_4.png" alt="agenda no" width="120" height="120">
+							</div>
+	
+							<div>
+								<img src="images/ag_5.png" alt="agenda no" width="120" height="120">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div class="space"></div>
+
+		
+
+		
+
+
+
+
 		<div class="page-heading">
 			<div class="container">
 				<h2>5 Task Force</h2>
@@ -141,15 +274,22 @@
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
 							<div class="img-wrap" itemprop="image"><img src="images/ag1.png" alt="courses picture"></div>
 								<a href="https://agendanasional.github.io/tf1.html" class="learn-desining-banner" itemprop="name"><strong>Kepimpinan Berwibawa</strong></a>
+								
 							<div class="box-body" itemprop="description">
+								
 								
 								<section itemprop="time">
 									<!--<p><span>Duration:</span> 4 Years</p>
 									<p><span>Class Time:</span> 6am-12am / 11am-5pm</p>
 									<p><span>Fee:</span> 4,00,000</p>-->
 								</section>
+								
 							</div>
+							
+							
+							
 						</div>
+						
 
 						<div class="box-wrap" itemprop="event" itemscope itemtype=" http://schema.org/Course">
 							<div class="img-wrap"  itemprop="image"><img src="images/ag2.png" alt="courses picture"></div>
@@ -199,41 +339,61 @@
 			</div>
 		</div>
 
-			<!-- Banner Close -->
-		<div class="page-heading">
-			<div class="container">
-				<h2>Agenda Nasional</h2>
-				<h2>(HEALTH STATUS)</h2>
-			</div>
-		</div>
-		<!-- Popular courses End -->
-		<div class="learn-courses">
-			<div class="container-number">
-				<div>
-					<div class="owl-one owl-carousel">
-						<div>
-							<div class=""  itemprop=""><img src="images/one.png" alt="agenda no" width="120" height="120"></div>
-						</div>
+		
+						
+							<!--<div class= "status1">
+							<div class="wrapper">
+								<div class="icon facebook">
+								  <div class="tooltip">Health Status: Okay</div>
+								  <span><i class="fa fa-check-circle"></i></span>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="icon facebook">
+								  <div class="tooltip">Health Status: Okay</div>
+								  <span><i class="fa fa-check-circle"></i></span>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="icon facebook">
+								  <div class="tooltip">Health Status: Okay</div>
+								  <span><i class="fa fa-check-circle"></i></span>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="icon facebook">
+								  <div class="tooltip">Health Status: Okay</div>
+								  <span><i class="fa fa-check-circle"></i></span>
+								</div>
+							</div>
+							<div class="wrapper">
+								<div class="icon facebook">
+								  <div class="tooltip">Health Status: Okay</div>
+								  <span><i class="fa fa-check-circle"></i></span>
+								</div>
+							</div>
 
-						<div>
-							<div class=""  itemprop=""><img src="images/two.png" alt="agenda no" width="120" height="120"></div>
-						</div>
+							
+								
+							</div>
+					     	</div> -->   <!--Status sambung lagi nanti-->
+							 
 
-						<div>
-							<div class=""  itemprop=""><img src="images/three.png" alt="agenda no" width="120" height="120"></div>
-						</div>
-						<div>
-							<div class=""  itemprop=""><img src="images/four.png" alt="agenda no" width="120" height="120"></div>
-						</div>
+						
+							
+						
 
-						<div>
-							<div class=""  itemprop=""><img src="images/five.png" alt="agenda no" width="120" height="120"></div>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
+						
+		
+		
+
+		
+
+		
+
+		
+	
+		
 		<!-- Learn courses End -->
 		<section class="whyUs-section">
 			<div class="container">
