@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.rateyo.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/meanmenu.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="inner-page-style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	canvas {
+
+
+
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin: auto;
+
+	}
+
+	.centerx {
+		margin: auto;
+		width: 100%;
+        padding: 10px;
+		text-align: center;
+	}
+
+
+	.card {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		transition: 0.3s;
+		width: 100%;
+		margin-top: 60px;
+		margin-bottom: px;
+		margin-right: 18px;
+		margin-left: 18px;
+		border-radius: 18px;
+		position: fixed;
+		padding-top: 10px;
+		padding-left: 10px;
+
+
+
+	}
+
+	.card:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.container {
+		padding: 45px 23px;
+		margin-top: 10px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	.container-donut {
+		padding: 45px 23px;
+		margin-top: 10px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	.center {
+		margin: auto;
+		width: 100%;
+
+		padding: 0px;
+	}
+
+	.myDiv {
+
+		text-align: center;
+		height: 5670px;
+		margin-left: 40px;
+		margin-right: 40px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		margin-top: 80px;
+		border-radius: 18px;
+		padding-top: 13px;
+		margin-bottom: 10px;
+
+
+	}
+
+	.dropbtn {
+		background-color: #30a8d8;
+		color: white;
+		padding: 9px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		padding-bottom: 16px;
+		width: 200px;
+		margin-top: 30px;
+		margin-left: 40px;
+		margin-bottom: 2px;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #c0c0c0;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+		margin-left: 40px;
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		width: 200px;
+		font-size: 14px;
+		
+
+	}
+
+	.dropdown-content a:hover {
+		background-color: #f1f1f1
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: #057692;
+	}
+
+	.footer2 {
+
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 700px;
+		background-color: #ffffff;
+		color: white;
+
+
+	}
+
+	.column {
+		float: left;
+		width: 33.33%;
+		padding: 40px;
+		height: 700px;
+		/* Should be removed. Only for demonstration */
+		margin-top: 20px;
+		position: center;
+		
+
+	}
+
+	.range-slider {
+		position: relative;
+		width: 200px;
+		height: 35px;
+		text-align: center;
+	}
+
+	.range-slider input {
+		pointer-events: none;
+		position: absolute;
+		overflow: hidden;
+		left: 0;
+		top: 15px;
+		width: 200px;
+		outline: none;
+		height: 18px;
+		margin: 0;
+		padding: 0;
+	}
+
+	.range-slider input::-webkit-slider-thumb {
+		pointer-events: all;
+		position: relative;
+		z-index: 1;
+		outline: 0;
+	}
+
+	.range-slider input::-moz-range-thumb {
+		pointer-events: all;
+		position: relative;
+		z-index: 10;
+		-moz-appearance: none;
+		width: 9px;
+	}
+
+	.range-slider input::-moz-range-track {
+		position: relative;
+		z-index: -1;
+		background-color: rgba(0, 0, 0, 1);
+		border: 0;
+	}
+
+	.range-slider input:last-of-type::-moz-range-track {
+		-moz-appearance: none;
+		background: none transparent;
+		border: 0;
+	}
+
+	.range-slider input[type=range]::-moz-focus-outer {
+		border: 0;
+	}
+
+	.rangeValue {
+		width: 30px;
+	}
+
+	.output {
+		position: absolute;
+		border: 1px solid #999;
+		width: 40px;
+		height: 30px;
+		text-align: center;
+		color: #999;
+		border-radius: 4px;
+		display: inline-block;
+		font: bold 15px/30px Helvetica, Arial;
+		bottom: 75%;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+
+	.output.outputTwo {
+		left: 100%;
+	}
+
+	.container-age {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+
+	}
+
+	input[type=range] {
+		-webkit-appearance: none;
+		background: none;
+	}
+
+	input[type=range]::-webkit-slider-runnable-track {
+		height: 5px;
+		border: none;
+		border-radius: 3px;
+		background: transparent;
+	}
+
+	input[type=range]::-ms-track {
+		height: 5px;
+		background: transparent;
+		border: none;
+		border-radius: 3px;
+	}
+
+	input[type=range]::-moz-range-track {
+		height: 5px;
+		background: transparent;
+		border: none;
+		border-radius: 3px;
+	}
+
+	input[type=range]::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		border: none;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: #555;
+		margin-top: -5px;
+		position: relative;
+		z-index: 10000;
+	}
+
+	input[type=range]::-ms-thumb {
+		-webkit-appearance: none;
+		border: none;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: #555;
+		margin-top: -5px;
+		position: relative;
+		z-index: 10000;
+	}
+
+	input[type=range]::-moz-range-thumb {
+		-webkit-appearance: none;
+		border: none;
+		height: 16px;
+		width: 16px;
+		border-radius: 50%;
+		background: #555;
+		margin-top: -5px;
+		position: relative;
+		z-index: 10000;
+	}
+
+	input[type=range]:focus {
+		outline: none;
+	}
+
+	.full-range,
+	.incl-range {
+		width: 100%;
+		height: 5px;
+		left: 0;
+		top: 21px;
+		position: absolute;
+		background: #DDD;
+	}
+
+	.incl-range {
+		background: gold;
+	}
+
+	hr.new1 {
+  border-top: 3px solid rgb(102, 102, 102);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.hg{
+	margin-top:60px;
+}
+</style>
+
+<body>
+
+	<div class="main-header">
+		<div class="containerhead">
+			<div class="logo-wrap" itemprop="logo">
+				<img src="images/site-logo.png" alt="Logo Image">
+				<!-- <h1>Education</h1> -->
+			</div>
+			<div class="nav-wrap">
+				<nav class="nav-desktop">
+					<ul class="menu-list">
+						<li><a href="https://agendanasional.github.io/main.html">Home</a></li>
+
+						<li class="menu-parent">Task Force
+							<ul class="sub-menu">
+								<li><a href="https://agendanasional.github.io/tf1.html">Kepimpinan Berwibawa</a></li>
+								<li><a href="https://agendanasional.github.io/tf2.html">Kemakmuran Ekonomi</a></li>
+								<li><a href="https://agendanasional.github.io/tf3.html">Perpaduan Nasional</a></li>
+								<li><a href="https://agendanasional.github.io/tf4.html">Masyarakat Progresif</a></li>
+								<li><a href="https://agendanasional.github.io/tf5.html">Institusi Kenegeraan</a></li>
+
+
+
+								<!--<li class="menu-parent">Child
+									<ul class="sub-menu">
+										<li><a href="">Grand-child</a></li>
+										<li><a href="">Grand-child</a></li>
+									</ul>
+								</li>-->
+							</ul>
+						</li>
+						<li><a href="https://agendanasional.github.io/dashboard.html">Dashboard</a></li>
+
+					</ul>
+				</nav>
+				<div id="bar">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div id="close">
+					<i class="fas fa-times"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="dropdown">
+		<button class="dropbtn">Media Sosial <i class="fa fa-sort-down" style="font-size:24px"></i></button>
+		<div class="dropdown-content">
+			<a href="https://agendanasional.github.io/eng_fb.html">Facebook </a>
+			<a href="https://agendanasional.github.io/eng_yt.html">Youtube </a>
+			
+			</a>
+		</div>
+	</div>
+
+	    <div class="centerx">
+	    <h1>Laporan Kempen Sambutan OKU 2021 | Facebook</h1>
+        </div>
+
+
+
+	<div class="center">
+
+		<div class="myDiv">
+			
+
+			
+            <div class="hg"></div>
+			<h1>1. Majlis Rasmi</h1>
+
+			<div class="footer2">
+				<div class="row">
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-address-card' style='font-size:26px'></i> | Umur</h2>
+							</div>
+
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-poll' style='font-size:26px'></i> | Statistik</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+							<canvas id="barchartsa" style="width:80%;max-width:660px;height: 200px;"></canvas>
+							
+
+						</div>
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-user-friends' style='font-size:26px'></i> | Jantina</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="myChadsrt" style="width:80%;max-width:300px;height: 240px;"></canvas>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="new1">
+			<div class="hg"></div>
+
+			<h1>2. Pelancaran</h1>
+
+
+			<div class="footer2">
+				<div class="row">
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-address-card' style='font-size:26px'></i> | Umur</h2>
+							</div>
+
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-poll' style='font-size:26px'></i> | Statistik</h2>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="barchart2" style="width:80%;max-width:660px;height: 200px;"></canvas>
+
+						</div>
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-user-friends' style='font-size:26px'></i> | Jantina</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="myChasrt2" style="width:80%;max-width:300px;height: 240px;"></canvas>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="new1">
+			<div class="hg"></div>
+
+			<h1>3. Konvensyen OKU Anjakan Paradigma</h1>
+
+			<div class="footer2">
+				<div class="row">
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-address-card' style='font-size:26px'></i> | Umur</h2>
+							</div>
+
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> 885 (25-34)</h1>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-poll' style='font-size:26px'></i> | Statistik</h2>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="barchart3" style="width:80%;max-width:660px;height: 200px;"></canvas>
+
+						</div>
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-user-friends' style='font-size:26px'></i> | Jantina</h2>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="myChart3" style="width:80%;max-width:300px;height: 240px;"></canvas>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="new1">
+			<div class="hg"></div>
+
+			<h1>4. Sejauh manakah kita meraikan OKU?</h1>
+			
+
+			<div class="footer2">
+				<div class="row">
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-address-card' style='font-size:26px'></i> | Umur</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+							
+
+						</div>
+
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-poll' style='font-size:26px'></i> | Statistik</h2>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="barchart4" style="width:80%;max-width:660px;height: 200px;"></canvas>
+
+						</div>
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-user-friends' style='font-size:26px'></i> | Jantina</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="myChart4s" style="width:80%;max-width:300px;height: 240px;"></canvas>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="new1">
+			<div class="hg"></div>
+
+			<h1>5. Kesihatan Mental, Sakit Yang Tak Nampak
+			</h1>
+
+			<div class="footer2">
+				<div class="row">
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-address-card' style='font-size:26px'></i> | Umur</h2>
+							</div>
+
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-poll' style='font-size:26px'></i> | Statistik</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="barchart5" style="width:80%;max-width:660px;height: 200px;"></canvas>
+
+						</div>
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-user-friends' style='font-size:26px'></i> | Jantina</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="myChart5s" style="width:80%;max-width:300px;height: 240px;"></canvas>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="new1">
+			<div class="hg"></div>
+
+			<h1>6. 
+				Adakah Infrastruktur di Malaysia Mesra OKU?
+			</h1>
+
+			<div class="footer2">
+				<div class="row">
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-address-card' style='font-size:26px'></i> | Umur</h2>
+							</div>
+
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-poll' style='font-size:26px'></i> | Statistik</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="barchart6" style="width:80%;max-width:660px;height: 200px;"></canvas>
+
+						</div>
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-user-friends' style='font-size:26px'></i> | Jantina</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="myChart6e" style="width:80%;max-width:300px;height: 240px;"></canvas>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="new1">
+			<div class="hg"></div>
+
+
+			<h1>7. 
+				
+Infrastruktur OKU Di Malaysia Masih Belum Lengkap?
+			</h1>
+
+
+			<div class="footer2">
+				<div class="row">
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-address-card' style='font-size:26px'></i> | Umur</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+							
+
+						</div>
+
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-poll' style='font-size:26px'></i> | Statistik</h2>
+							</div>
+							
+
+
+
+						</div>
+						<div class="">
+							<canvas id="barchart7" style="width:80%;max-width:660px;height: 200px;"></canvas>
+
+						</div>
+					</div>
+					<div class="column">
+						<div class="page-heading">
+							<div class="container">
+								<h2><i class='fas fa-user-friends' style='font-size:26px'></i> | Jantina</h2>
+							</div>
+							<div class="containersub">
+								<h1><i class='	fas fa-chevron-circle-right' style='font-size:23px'></i> (No Data)</h1>
+							</div>
+
+
+
+						</div>
+						<div class="">
+							<canvas id="myChart7s" style="width:80%;max-width:300px;height: 240px;"></canvas>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.rateyo.js"></script>
+	<script type="text/javascript" src="js/chart.js"></script>
+	<script src="js/chart.js"></script>
+	<script>
+		var xValues = ["Lelaki", "Perempuan"];
+		var yValues = [55, 49];
+		var barColors = [
+			"#b91d47",
+			"#00aba9"
+
+		];
+
+		new Chart("myChart", {
+			type: "doughnut",
+			data: {
+				labels: xValues,
+				datasets: [{
+					backgroundColor: barColors,
+					data: yValues
+				}]
+			},
+			options: {
+				title: {
+					display: true,
+					text: "Jantina"
+				}
+			}
+		});
+	</script>
+
+	<script>
+		var xValues = ["Engagement", "Views", "Reach"];
+		var yValues = [435, 1383, 1860, 24, 15];
+		var barColors = ["#b91d47", "#00aba9", "blue", "orange", "brown"];
+
+		new Chart("barchart", {
+			type: "bar",
+			data: {
+				labels: xValues,
+				datasets: [{
+					backgroundColor: barColors,
+					data: yValues
+				}]
+			},
+			options: {
+				legend: { display: false },
+				title: {
+					display: true,
+					text: "Statistik"
+				}
+			}
+		});
+	</script>
+
+<script>
+	var xValues = ["Lelaki", "Perempuan"];
+	var yValues = [55, 49];
+	var barColors = [
+		"#b91d47",
+		"#00aba9"
+
+	];
+
+	new Chart("myChart2", {
+		type: "doughnut",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: "Jantina"
+			}
+		}
+	});
+</script>
+
+<script>
+	var xValues = ["Engagement", "Views", "Reach"];
+	var yValues = [20, 0, 1556];
+	var barColors = ["#b91d47", "#00aba9", "blue", "orange", "brown"];
+
+	new Chart("barchart2", {
+		type: "bar",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			legend: { display: false },
+			title: {
+				display: true,
+				text: "Statistik"
+			}
+		}
+	});
+</script>
+<script>
+	var xValues = ["Lelaki", "Perempuan"];
+	var yValues = [51, 49];
+	var barColors = [
+		"#b91d47",
+		"#00aba9"
+
+	];
+
+	new Chart("myChart3", {
+		type: "doughnut",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: "Jantina"
+			}
+		}
+	});
+</script>
+
+<script>
+	var xValues = ["Engagement", "Views", "Reach"];
+	var yValues = [588, 4669, 9456];
+	var barColors = ["#b91d47", "#00aba9", "blue", "orange", "brown"];
+
+	new Chart("barchart3", {
+		type: "bar",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			legend: { display: false },
+			title: {
+				display: true,
+				text: "Statistik"
+			}
+		}
+	});
+</script>
+<script>
+	var xValues = ["Lelaki", "Perempuan"];
+	var yValues = [55, 49];
+	var barColors = [
+		"#b91d47",
+		"#00aba9"
+
+	];
+
+	new Chart("myChart4", {
+		type: "doughnut",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: "Jantina"
+			}
+		}
+	});
+</script>
+
+<script>
+	var xValues = ["Engagement", "Views", "Reach"];
+	var yValues = [59, 6800, 8293];
+	var barColors = ["#b91d47", "#00aba9", "blue", "orange", "brown"];
+
+	new Chart("barchart4", {
+		type: "bar",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			legend: { display: false },
+			title: {
+				display: true,
+				text: "Statistik"
+			}
+		}
+	});
+</script>
+<script>
+	var xValues = ["Lelaki", "Perempuan"];
+	var yValues = [55, 49];
+	var barColors = [
+		"#b91d47",
+		"#00aba9"
+
+	];
+
+	new Chart("myChart5", {
+		type: "doughnut",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: "Jantina"
+			}
+		}
+	});
+</script>
+
+<script>
+	var xValues = ["Engagement", "Views", "Reach"];
+	var yValues = [34, 304, 959];
+	var barColors = ["#b91d47", "#00aba9", "blue", "orange", "brown"];
+
+	new Chart("barchart5", {
+		type: "bar",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			legend: { display: false },
+			title: {
+				display: true,
+				text: "Statistik"
+			}
+		}
+	});
+</script>
+<script>
+	var xValues = ["Lelaki", "Perempuan"];
+	var yValues = [55, 49];
+	var barColors = [
+		"#b91d47",
+		"#00aba9"
+
+	];
+
+	new Chart("myChart6", {
+		type: "doughnut",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: "Jantina"
+			}
+		}
+	});
+</script>
+
+<script>
+	var xValues = ["Engagement", "Views", "Reach"];
+	var yValues = [6, 88, 383];
+	var barColors = ["#b91d47", "#00aba9", "blue", "orange", "brown"];
+
+	new Chart("barchart6", {
+		type: "bar",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			legend: { display: false },
+			title: {
+				display: true,
+				text: "Statistik"
+			}
+		}
+	});
+</script>
+<script>
+	var xValues = ["Lelaki", "Perempuan"];
+	var yValues = [55, 49];
+	var barColors = [
+		"#b91d47",
+		"#00aba9"
+
+	];
+
+	new Chart("myChart7", {
+		type: "doughnut",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: "Jantina"
+			}
+		}
+	});
+</script>
+
+<script>
+	var xValues = ["Engagement", "Views", "Reach"];
+	var yValues = [18, 188, 665];
+	var barColors = ["#b91d47", "#00aba9", "blue", "orange", "brown"];
+
+	new Chart("barchart7", {
+		type: "bar",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			legend: { display: false },
+			title: {
+				display: true,
+				text: "Statistik"
+			}
+		}
+	});
+</script>
+
+	
+
+	<script>
+		var rangeOne = document.querySelector('input[name="rangeOne"]'),
+			rangeTwo = document.querySelector('input[name="rangeTwo"]'),
+			outputOne = document.querySelector('.outputOne'),
+			outputTwo = document.querySelector('.outputTwo'),
+			inclRange = document.querySelector('.incl-range'),
+			updateView = function () {
+				if (this.getAttribute('name') === 'rangeOne') {
+					outputOne.innerHTML = this.value;
+					outputOne.style.left = this.value / this.getAttribute('max') * 100 + '%';
+				} else {
+					outputTwo.style.left = this.value / this.getAttribute('max') * 100 + '%';
+					outputTwo.innerHTML = this.value
+				}
+				if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
+					inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
+					inclRange.style.left = rangeTwo.value / this.getAttribute('max') * 100 + '%';
+				} else {
+					inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
+					inclRange.style.left = rangeOne.value / this.getAttribute('max') * 100 + '%';
+				}
+			};
+
+		document.addEventListener('DOMContentLoaded', function () {
+			updateView.call(rangeOne);
+			updateView.call(rangeTwo);
+			$('input[type="range"]').on('mouseup', function () {
+				this.blur();
+			}).on('mousedown input', function () {
+				updateView.call(this);
+			});
+		});
+	</script>
+
+
+	<!-- <script type="text/javascript" src="js/jquery.mmenu.all.js"></script> -->
+	<!-- <script type="text/javascript" src="js/jquery.meanmenu.min.js"></script> -->
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
